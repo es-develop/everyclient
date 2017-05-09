@@ -1,3 +1,4 @@
 # -*- coding: utf-8 -*-
 
-# EveryClient().auth_user(["daiyanze","daiyanze8964"])
+# from everyclient import EveryClient
+# EveryClient().auth_user(["account","password"])
