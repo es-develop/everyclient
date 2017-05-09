@@ -12,7 +12,7 @@ python:
 
 script: 
 - make install
-- make nosetests
+- make test
 
 deploy:
   provider: pypi
