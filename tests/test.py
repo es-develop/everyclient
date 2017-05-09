@@ -8,7 +8,7 @@ import unittest
 class NewTestSet(unittest.TestCase):
 
     def test_not_none(self):
-        res = EveryClient().auth_user(["daiyanze","daiyanze8964"])
+        res = EveryClient().get_perfectures()
         self.assertIsNotNone(res['code'])
 
 

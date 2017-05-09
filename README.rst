@@ -1,5 +1,8 @@
 Everysense Rest API client
 
+.. image:: https://travis-ci.org/daiyanze/everyclient.svg?branch=master
+    :target: https://travis-ci.org/daiyanze/everyclient
+
 Installation:
 
 Pypi
