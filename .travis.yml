@@ -1,0 +1,18 @@
+language: python
+
+python:
+- '3.2'
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+- '3.7'
+
+deploy:
+  provider: pypi
+  user: everysense
+  password:
+    secure: UfUAvOTWnaVecXK9pqJ/4g5ax9t+FiDWF9l3NE14tYvg+9aZ/wpP2eTvDqT3PVkBNO+u+8U79m2/FGonXc1RGMZq7H9gkZmZJd2NPSLZluC0qKcREDB998SAMQhYkkYtOkj1x1n+72NgNONJThoNIIkU5eVhucpxnyb9kFnhS7UIJmM2L2Zi8v7pczjYeBPqsYfMh8GdVNa0o84puEQs37QXV6hnRsFFjFcR/e4ghbZot3W3OY3TRd79u8MrTxGf3BB9z3bk993pvmwNrtytZ6e3mjUg5pfjskxNvhg3KbFnhDjEpShwY8N5fwExfllyA/3i43Qm4gj7F/RtlqB7t1iIsEP/FdBA/n/jf6U+Mic7WSMCvCWqZHmNTBEZA2DjwF0iP7w2aaq4hjvCoheebbKnHNbS89K51mfOSYMto8kfiIdolCo2Mqa0lIa9nsJU5AahCvLtyy4lSmOVtwTj/kzFUJGyWVG5520e2iKqQ5XUOV38CVWuw/cIz1qJodauZz1e4wO6VZa7PMkaDV8G/yBKIgRw649isaugmAKrq4MTDfTd14fQgp4A6c7mXikGoqD61DSPEVK8GLiL5fxzjMfl3Gcb/ICRIihSTptS6SG3/WzU6cNZrG0cxj2arMFsFnTg88jH0u73BwDvZ1QKrinhh/zQqGc/BB9JAoC8IGs=
+  on:
+    branch: master
+    tags: true
