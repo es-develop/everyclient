@@ -1,5 +1,7 @@
 # Everysense Rest API client
 
+[![Build Status](https://travis-ci.org/daiyanze/everyclient.svg?branch=master)](https://travis-ci.org/daiyanze/everyclient)
+
 ### Installation
 
 Pypi
