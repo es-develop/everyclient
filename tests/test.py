@@ -8,7 +8,7 @@ import unittest
 class NewTestSet(unittest.TestCase):
 
     def test_not_none(self):
-        res = EveryClient().get_perfectures(None)
+        res = EveryClient().get_perfectures([])
         self.assertIsNotNone(res['code'])
 
 
