@@ -10,10 +10,9 @@ python:
 - '3.6'
 - '3.7'
 
-# command to install dependencies
-install: "pip install -r requirements.txt --use-mirrors"
-# command to run tests
-script: nosetests
+script: 
+- make install
+- make nosetests
 
 deploy:
   provider: pypi
