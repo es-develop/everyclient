@@ -1,6 +1,9 @@
 # Everysense Rest API client
 
 [![Build Status](https://travis-ci.org/daiyanze/everyclient.svg?branch=master)](https://travis-ci.org/daiyanze/everyclient)
+[![Release Version](https://img.shields.io/pypi/v/everyclient.svg)](https://pypi.python.org/pypi/everyclient)
+[![License](https://img.shields.io/pypi/l/everyclient.svg)](https://pypi.python.org/pypi/everyclient)
+[![Python Compatibility](https://img.shields.io/pypi/pyversions/everyclient.svg)](https://pypi.python.org/pypi/everyclient)
 
 ### Installation
 
