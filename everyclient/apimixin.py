@@ -5,9 +5,6 @@ from .config import open_apis
 
 class APIMixin(HTTP):
 
-    def __init__(self):
-        self.api_method = ""
-
     def __getattr__(self, name):
         if not hasattr(super(), name):
             self.set_attr(name)
@@ -15,8 +12,7 @@ class APIMixin(HTTP):
 
     def set_attr(self, name):
         if name in open_apis:
-            super().__setattr__(name, self.attr_func)
-            self.api_method = name
+            super().__setattr__(name, self._create_func(name))
         else:
             raise AttributeError(
                 "\n-----------------------------------------------------\n"
@@ -27,6 +23,10 @@ class APIMixin(HTTP):
                 "\n-----------------------------------------------------\n"
                 % (str(name), str(open_apis))
                 )
-                
-    def attr_func(self, kwargs):
-        return self.request(self.api_method, kwargs)
+
+    def _create_func(self, name):
+        def func(args):
+            return self.request(name, args)
+        func.__name__ = name
+        return func
+        
