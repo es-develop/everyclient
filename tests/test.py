@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-
-from .context import EveryClient
+try:
+    from context import EveryClient
+except:
+    from .context import EveryClient
 
 import unittest
 
