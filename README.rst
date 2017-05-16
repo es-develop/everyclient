@@ -3,6 +3,13 @@ Everysense Rest API client
 .. image:: https://travis-ci.org/daiyanze/everyclient.svg?branch=master
     :target: https://travis-ci.org/daiyanze/everyclient
 
+Requirements:
+
+Python (2.7, 3.4, 3.5, 3.6)
+
+urllib3[secure] (1.20)
+
+
 Installation:
 
 Pypi
@@ -15,7 +22,7 @@ Local
 
 2. cd everyclient
 
-3. python3 setup.py develop -u
+3. python3 setup.py install
 
 
 Example Usage :

@@ -1,1 +1,1 @@
-urllib3[secure]
+urllib3[secure]<=1.20

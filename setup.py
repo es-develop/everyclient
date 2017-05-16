@@ -7,12 +7,12 @@ with open('README.rst') as f:
 
 setup(
     name='everyclient',
-    version='0.1.4',
+    version='0.1.5',
     description='Everysense client package for Rest API',
     long_description=readme,
     author='Everysense Inc',
     author_email='support@every-sense.com',
     url='https://github.com/every-sense',
     license='MIT',
-    packages=find_packages(exclude=('tests', 'example', 'docs'))
+    packages=find_packages(exclude=('tests', 'example'))
 )
