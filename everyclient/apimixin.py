@@ -6,13 +6,13 @@ from .config import open_apis
 class APIMixin(HTTP):
 
     def __getattr__(self, name):
-        if not hasattr(self.__class__, name):
+        if not hasattr(super(APIMixin, self), name):
             self.set_attr(name)
         return self.__getattribute__(name)
 
     def set_attr(self, name):
         if name in open_apis:
-            self.__class__.__setattr__(name, self._create_func(name))
+            super(APIMixin, self).__setattr__(name, self._create_func(name))
         else:
             raise AttributeError(
                 "\n-----------------------------------------------------\n"
