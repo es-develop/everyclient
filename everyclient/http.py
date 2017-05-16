@@ -12,7 +12,7 @@ from json import (
     )
 
 
-class HTTP:
+class HTTP(object):
     retries = 5
     redirects = 2
     timeout = 120
